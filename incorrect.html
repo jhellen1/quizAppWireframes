@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width">
+            <meta name="description" content="Rock Music Trivia Quiz">
+        <title>Rock Quiz App</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                align-content: center;
+                background-image: url("http://img.wennermedia.com/social/rs-black-sabbath-e777e412-7a2a-4782-b108-63871f9a2976.jpg");
+            }
+            .progress-container {
+                display: flex;
+                justify-content: space-around;
+            }
+            .select-answer {
+                text-align: left;
+            }
+            p, label, button {
+                font-weight: bold;
+            }
+            .parent-containers {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin: 5% 0;
+            }
+            .top-container {
+                text-align: center;
+                background-color: white;
+                opacity: .93;
+                min-width: 400px;
+                max-width: 600px;
+            }
+            .bottom-container {
+                text-align: center;
+                background-color: white;
+                opacity: .93;
+                min-width: 400px;
+                max-width: 600px;
+            }
+
+            button {
+                border: 3px solid black;
+                border-radius: 3px;
+                width: 120px;
+                height: auto;
+                cursor: pointer;
+                margin: 3% 0;
+            }
+            button:hover {
+                background-color:black;
+                color: white;
+            }
+            .feedback {
+                text-align: center;
+            }
+            .feedback-text {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="parent-containers">
+                <fieldset class="top-container">
+                    <div class="quiz-title">
+                        <h1>Rock Trivia Quiz</h1>
+                    </div>
+                    <div class ="progress-container">
+                        <div class="score">
+                            <h2>Score: 3/10</h2>
+                        </div>
+                        <div class="question-number">
+                            <h2>Question: 4/10</h2>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </header>
+
+        <main>
+            <div class="parent-containers">
+                <form>
+                    <fieldset class="bottom-container">
+                        <div>
+                            <h3>What was the greatest rock band ever to exist?</h3>
+                        </div>
+                        <div class="select-answer">
+                            <input type="radio" name="chooseone" value="Black Sabbath"><label for="Black Sabbath">Black Sabbath</label><br>
+                            <input type="radio" name="chooseone" value="White Snake"><label for="White Snake">White Snake</label><br>
+                            <input type="radio" name="chooseone" checked="true" value="INXS"><label for="INXS">INXS</label><br>
+                                <fieldset class="feedback">
+                                    <p class="feedback-text">WRONG!!! Nice try, POSER...</p>
+                                </fieldset>
+                            <input type="radio" name="chooseone" value="Chumbawamba"><label for="Chumbawamba">Chumbawamba</label>
+                        </div>
+                        <div>
+                            <button type="button">Next</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
